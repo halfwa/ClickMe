@@ -1,0 +1,23 @@
+﻿@model 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3 class="display-5">Просто - один клик</h3>
+    <p>Сделайте свою жизнь проще, начните с этой ссылки</p>
+     <form class="frm" method="post" asp-controller="" asp-action="">
+        <div asp-validation-summary="ModelOnly"></div>
+         <div>
+             <div>
+                <input class="form-control"
+                       asp-for=""
+                       placeholder="Введите длинную и не удобную ссылку"
+                       type="text">
+             </div>
+            <span>
+             <button>Click Me</button>    
+            </span>
+         </div>
+     </form>
+</div>
